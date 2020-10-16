@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style>
+		h1 {
+			text-align: center;
+		}
+
+		h2 {
+			text-align: center;
+		}
+
+		p {
+			text-align: center;
+		}
+
+		div {
+			text-align: center;
+		}
+
+		button {
+			margin: 0 auto;
+			display: block;
+		}
+
+		input {
+			margin: 0 auto;
+			display: block;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Please solve the problem below:</h1>
+	<h2 id="math"></h2>
+
+	<p>Your Answer: <input type="text" id="answer" value=""></p>
+
+<p>Click the button when you're done.</p>
+
+<button type="button" onclick="retrieveInput()">Check Answer</button>
+
+<p>(I do not own the rights to any of these songs.)</p>
+<p>(But the rest of the code is by me.)</p>
+<script>
+  var x = (Math.floor((Math.random() * 100) + 1));
+  var y = (Math.floor((Math.random() * 100) + 1));
+  var type = (Math.floor((Math.random() * 4) + 1));
+  document.getElementById("math").innerHTML = generateEquation(x,y,type);
+/*
+
+Basically just compares the input to the real answer. If they match, then it doesn't do anything. But if they don't, you get rick-rolled.
+
+*/
+function retrieveInput() {
+  var query = document.getElementById("answer");
+  var finalanswer = (query.value);
+if (type=="1") {
+  var result = (x + y);
+}
+if (type=="2") {
+  var result = (x - y);
+}
+if (type=="3")  {
+  var result = (x * y);
+}
+if (type=="4") {
+  var result = (x / y);
+}
+if (finalanswer==result) {
+var obj = {"video": {
+  "value": "<iframe title='YouTube video player' type=\"text/html\" width='1350' height='500' src='https://www.youtube.com/embed/CYqq9Ovz_9c?controls=0&autoplay=1' frameborder='0' allowFullScreen></iframe>"
+}}
+document.write(obj.video.value);
+}
+else {
+var obj = {"video": {
+  "value": "<iframe title='YouTube video player' type=\"text/html\" width='1350' height='500' src='https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?&enablejsapi=1&autoplay=1&mute=0' frameborder='0' allowFullScreen></iframe>"
+}}
+document.write(obj.video.value);
+}
+}
+/*
+
+Generates the Math Equation. This part was really buggy at first, because I'm apparently not very experienced when it comes to "if" statements.
+
+*/
+function generateEquation(x,y,type) {
+if (type=="1") {
+  return (x + "+" + y);
+}
+if (type=="2") {
+  return (x + "-" + y);
+}
+if (type=="3")  {
+  return (x + "*" + y);
+}
+if (type=="4") {
+  return (x + "/" + y);
+}
+}
+</script>
+</body>
+</html><!DOCTYPE html>
+<html>
+
+<head>
+	<style>
+		h1 {
+			text-align: center;
+		}
+
+		h2 {
+			text-align: center;
+		}
+
+		p {
+			text-align: center;
+		}
+
+		div {
+			text-align: center;
+		}
+
+		button {
+			margin: 0 auto;
+			display: block;
+		}
+
+		input {
+			margin: 0 auto;
+			display: block;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Please solve the problem below:</h1>
+	<h2 id="math"></h2>
+
+	<p>Your Answer: <input type="text" id="answer" value=""></p>
+
+<p>Click the button when you're done.</p>
+
+<button type="button" onclick="retrieveInput()">Check Answer</button>
+
+<p>(I do not own the rights to any of these songs.)</p>
+<p>(But the rest of the code is by me.)</p>
+<script>
+  var x = (Math.floor((Math.random() * 100) + 1));
+  var y = (Math.floor((Math.random() * 100) + 1));
+  var type = (Math.floor((Math.random() * 4) + 1));
+  document.getElementById("math").innerHTML = generateEquation(x,y,type);
+/*
+
+Basically just compares the input to the real answer. If they match, then it doesn't do anything. But if they don't, you get rick-rolled.
+
+*/
+function retrieveInput() {
+  var query = document.getElementById("answer");
+  var finalanswer = (query.value);
+if (type=="1") {
+  var result = (x + y);
+}
+if (type=="2") {
+  var result = (x - y);
+}
+if (type=="3")  {
+  var result = (x * y);
+}
+if (type=="4") {
+  var result = (x / y);
+}
+if (finalanswer==result) {
+var obj = {"video": {
+  "value": "<iframe title='YouTube video player' type=\"text/html\" width='1350' height='500' src='https://www.youtube.com/embed/CYqq9Ovz_9c?controls=0&autoplay=1' frameborder='0' allowFullScreen></iframe>"
+}}
+document.write(obj.video.value);
+}
+else {
+var obj = {"video": {
+  "value": "<iframe title='YouTube video player' type=\"text/html\" width='1350' height='500' src='https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ?&enablejsapi=1&autoplay=1&mute=0' frameborder='0' allowFullScreen></iframe>"
+}}
+document.write(obj.video.value);
+}
+}
+/*
+
+Generates the Math Equation. This part was really buggy at first, because I'm apparently not very experienced when it comes to "if" statements.
+
+*/
+function generateEquation(x,y,type) {
+if (type=="1") {
+  return (x + "+" + y);
+}
+if (type=="2") {
+  return (x + "-" + y);
+}
+if (type=="3")  {
+  return (x + "*" + y);
+}
+if (type=="4") {
+  return (x + "/" + y);
+}
+}
+</script>
+</body>
+</html>
