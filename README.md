@@ -1,4 +1,4 @@
 # Math-Assistance-with-Rick-Astley
 Just some simple HTML I made for school. The autoplay is a little buggy, but you get the idea.
 
-Anybody can fork, write pull requests, etc.
+Feel free to improve anything.
